@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9cac2660-d108-4ab7-85de-64101e450772" name="Changes" comment="start new project from scratch" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2I9WPiN1FBaM31w1kdj4U3JnGHJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/pawel/Documents/5_sem/swkom/project_swkom/parceltracker_swkom/springboot",
+    "spring.configuration.checksum": "98e1c1d1ea254e3c2ad6dd4fc82b511e"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.OpenApiGeneratorApplication">
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DatabaseConnectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parceltracker_swkom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhtw.swen3.persistence.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhtw.swen3.persistence.repositories" />
+      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.persistence.repositories.DatabaseConnectionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ErrorRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parceltracker_swkom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhtw.swen3.persistence.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhtw.swen3.persistence.repositories" />
+      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.persistence.repositories.ErrorRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParcelRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parceltracker_swkom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhtw.swen3.persistence.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhtw.swen3.persistence.repositories" />
+      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.persistence.repositories.ParcelRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenApiGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="parceltracker_swkom" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.OpenApiGeneratorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ParcelRepositoryTest" />
+        <item itemvalue="JUnit.ErrorRepositoryTest" />
+        <item itemvalue="JUnit.DatabaseConnectionTest" />
+        <item itemvalue="JUnit.ParcelRepositoryTest" />
+        <item itemvalue="JUnit.ErrorRepositoryTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cac2660-d108-4ab7-85de-64101e450772" name="Changes" comment="" />
+      <created>1669594256778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669594256778</updated>
+      <workItem from="1669594258387" duration="4995000" />
+      <workItem from="1669600145112" duration="2607000" />
+      <workItem from="1669604343129" duration="3532000" />
+      <workItem from="1669633723505" duration="7800000" />
+      <workItem from="1669767793287" duration="131000" />
+      <workItem from="1670353247747" duration="10186000" />
+      <workItem from="1670786842618" duration="8011000" />
+    </task>
+    <task id="LOCAL-00001" summary="h2 database can connect but problems with beans">
+      <created>1669632556637</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669632556637</updated>
+    </task>
+    <task id="LOCAL-00002" summary="h2 database can connect but problems with beans">
+      <created>1669634595222</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669634595222</updated>
+    </task>
+    <task id="LOCAL-00003" summary="sadf">
+      <created>1669634793594</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669634793594</updated>
+    </task>
+    <task id="LOCAL-00004" summary="safg">
+      <created>1669634865159</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669634865159</updated>
+    </task>
+    <task id="LOCAL-00005" summary="sadasfa">
+      <created>1669636380334</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669636380334</updated>
+    </task>
+    <task id="LOCAL-00006" summary="sadasfa">
+      <created>1669636492006</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669636492006</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test">
+      <created>1669636573645</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669636573645</updated>
+    </task>
+    <task id="LOCAL-00008" summary="env build yaml">
+      <created>1669636767416</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669636767416</updated>
+    </task>
+    <task id="LOCAL-00009" summary="env build yaml">
+      <created>1669636941339</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669636941339</updated>
+    </task>
+    <task id="LOCAL-00010" summary="env build yaml">
+      <created>1669637077732</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669637077732</updated>
+    </task>
+    <task id="LOCAL-00011" summary="env build yaml">
+      <created>1669638055467</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669638055467</updated>
+    </task>
+    <task id="LOCAL-00012" summary="env build yaml">
+      <created>1669638193675</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669638193675</updated>
+    </task>
+    <task id="LOCAL-00013" summary="env build yaml">
+      <created>1669638246065</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669638246065</updated>
+    </task>
+    <task id="LOCAL-00014" summary="env build yaml">
+      <created>1669638814624</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669638814624</updated>
+    </task>
+    <task id="LOCAL-00015" summary="env build yaml">
+      <created>1669639126326</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669639126326</updated>
+    </task>
+    <task id="LOCAL-00016" summary="env build yaml">
+      <created>1669639332254</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669639332254</updated>
+    </task>
+    <task id="LOCAL-00017" summary="env build yaml">
+      <created>1669639894282</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669639894282</updated>
+    </task>
+    <task id="LOCAL-00018" summary="env build yaml">
+      <created>1669640021906</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669640021906</updated>
+    </task>
+    <task id="LOCAL-00019" summary="env build yaml">
+      <created>1669640190658</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669640190658</updated>
+    </task>
+    <task id="LOCAL-00020" summary="env build yaml">
+      <created>1669640255930</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669640255930</updated>
+    </task>
+    <task id="LOCAL-00021" summary="env build yaml">
+      <created>1669640641126</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1669640641126</updated>
+    </task>
+    <task id="LOCAL-00022" summary="shizzle">
+      <created>1670353543623</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1670353543623</updated>
+    </task>
+    <task id="LOCAL-00023" summary="shizzle">
+      <created>1670354450928</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1670354450928</updated>
+    </task>
+    <task id="LOCAL-00024" summary="shizzle">
+      <created>1670354997463</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1670354997463</updated>
+    </task>
+    <task id="LOCAL-00025" summary="warehouse + geolocation proxy">
+      <created>1670364074735</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670364074735</updated>
+    </task>
+    <task id="LOCAL-00026" summary="parcelapi* and parcelService* implemented from dev branch like poor man">
+      <created>1670365067016</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670365067016</updated>
+    </task>
+    <task id="LOCAL-00027" summary="pulled from dev2 branch and resolved merge conflicts like poor man">
+      <created>1670365518908</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1670365518908</updated>
+    </task>
+    <task id="LOCAL-00028" summary="all the hops and warehouses">
+      <created>1670787741978</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670787741978</updated>
+    </task>
+    <task id="LOCAL-00029" summary="all the hops and warehouses">
+      <created>1670788963906</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1670788963906</updated>
+    </task>
+    <task id="LOCAL-00030" summary="all the hops and warehouses">
+      <created>1670791428708</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1670791428709</updated>
+    </task>
+    <task id="LOCAL-00031" summary="all the hops and warehouses">
+      <created>1670793379735</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1670793379735</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="h2 database can connect but problems with beans" />
+    <MESSAGE value="sadf" />
+    <MESSAGE value="safg" />
+    <MESSAGE value="sadasfa" />
+    <MESSAGE value="test" />
+    <MESSAGE value="env build yaml" />
+    <MESSAGE value="shizzle" />
+    <MESSAGE value="warehouse + geolocation proxy" />
+    <MESSAGE value="parcelapi* and parcelService* implemented from dev branch like poor man" />
+    <MESSAGE value="pulled from dev2 branch and resolved merge conflicts like poor man" />
+    <MESSAGE value="all the hops and warehouses" />
+    <option name="LAST_COMMIT_MESSAGE" value="all the hops and warehouses" />
+  </component>
+</project>
