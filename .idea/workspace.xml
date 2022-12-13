@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cac2660-d108-4ab7-85de-64101e450772" name="Changes" comment="start new project from scratch" />
+    <list default="true" id="9cac2660-d108-4ab7-85de-64101e450772" name="Changes" comment="start new project from scratch">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +59,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2I9WPiN1FBaM31w1kdj4U3JnGHJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -61,7 +82,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/pawel/Documents/5_sem/swkom/project_swkom/parceltracker_swkom/springboot",
-    "spring.configuration.checksum": "98e1c1d1ea254e3c2ad6dd4fc82b511e"
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "98e1c1d1ea254e3c2ad6dd4fc82b511e",
+    "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -69,7 +95,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.OpenApiGeneratorApplication">
+  <component name="RunManager" selected="Spring Boot.OpenApiGeneratorApplication (1)">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -151,6 +177,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OpenApiGeneratorApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="openapi-spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.OpenApiGeneratorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OpenApiGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="parceltracker_swkom" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.OpenApiGeneratorApplication" />
@@ -183,6 +216,7 @@
       <workItem from="1669767793287" duration="131000" />
       <workItem from="1670353247747" duration="10186000" />
       <workItem from="1670786842618" duration="8011000" />
+      <workItem from="1670934099130" duration="438000" />
     </task>
     <task id="LOCAL-00001" summary="h2 database can connect but problems with beans">
       <created>1669632556637</created>
