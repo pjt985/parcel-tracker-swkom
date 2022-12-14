@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cac2660-d108-4ab7-85de-64101e450772" name="Changes" comment="Implemented ParcelApiController and WarehouseApiController, added OpenStreetMapsProxy, refined Unit Tests &amp; Mappers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/test/java/org/openapitools/OpenApiGeneratorApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/test/java/org/openapitools/OpenApiGeneratorApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="9cac2660-d108-4ab7-85de-64101e450772" name="Changes" comment="Fix issue" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +238,7 @@
       <workItem from="1670934099130" duration="1535000" />
       <workItem from="1670935641649" duration="10103000" />
       <workItem from="1671037415963" duration="14380000" />
-      <workItem from="1671053524336" duration="6497000" />
+      <workItem from="1671053524336" duration="6807000" />
     </task>
     <task id="LOCAL-00001" summary="h2 database can connect but problems with beans">
       <created>1669632556637</created>
@@ -489,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671058569312</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Fix issue">
+      <created>1671060105379</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1671060105379</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,6 +525,7 @@
     <MESSAGE value="Updated project structure" />
     <MESSAGE value="Added Unit Tests" />
     <MESSAGE value="Implemented ParcelApiController and WarehouseApiController, added OpenStreetMapsProxy, refined Unit Tests &amp; Mappers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented ParcelApiController and WarehouseApiController, added OpenStreetMapsProxy, refined Unit Tests &amp; Mappers" />
+    <MESSAGE value="Fix issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix issue" />
   </component>
 </project>
