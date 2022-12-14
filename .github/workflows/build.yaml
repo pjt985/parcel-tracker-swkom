@@ -65,11 +65,11 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/springboot/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       #Build the application using Maven
       - name: Build with Maven
-        run: mvn -B package -DskipTests --file springboot/pom.xml
+        run: mvn -B package -DskipTests --file pom.xml
       #Build the application using Maven
       - name: Upload JAR
         #This uploads artifacts from your workflow allowing you to share data between jobs and store data once a workflow is complete.
