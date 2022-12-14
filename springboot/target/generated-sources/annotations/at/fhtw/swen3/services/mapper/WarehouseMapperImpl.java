@@ -12,7 +12,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-12-12T05:07:43+0100",
+    date = "2022-12-14T18:57:59+0100",
     comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
 )
 public class WarehouseMapperImpl implements WarehouseMapper {

@@ -8,7 +8,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-12-12T05:07:44+0100",
+    date = "2022-12-14T18:57:58+0100",
     comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
 )
 public class TransferwarehouseMapperImpl implements TransferwarehouseMapper {

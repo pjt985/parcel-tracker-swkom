@@ -9,6 +9,7 @@ import at.fhtw.swen3.services.dto.NewParcelInfo;
 import at.fhtw.swen3.services.dto.Parcel;
 import at.fhtw.swen3.services.dto.TrackingInformation;
 import at.fhtw.swen3.services.mapper.ParcelMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,9 +23,12 @@ import javax.annotation.Generated;
 
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-12-11T21:56:32.948147Z[Etc/UTC]")
 @Controller
+@Slf4j
 public class ParcelApiController implements ParcelApi {
 
+    @Autowired
     private final NativeWebRequest request;
+    @Autowired
     private final ParcelService service;
 
     @Autowired
@@ -39,36 +43,27 @@ public class ParcelApiController implements ParcelApi {
     }
 
     @Override
-    @RequestMapping(
-            method = RequestMethod.POST,
-            value = "/parcel",
-            produces = { "application/json" },
-            consumes = { "application/json" }
-    )
-    public ResponseEntity<NewParcelInfo> submitParcel(Parcel parcel) {
-        ParcelEntity parcelEntity = ParcelMapper.INSTANCE.dtoToEntity(parcel);
-        this.service.submit(parcelEntity);
-        return new ResponseEntity<>(HttpStatus.CREATED);
-    }
-
-    @Override
     public ResponseEntity<Void> reportParcelDelivery(String trackingId) {
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
-    }
-
-    @Override
-    public ResponseEntity<TrackingInformation> trackParcel(String trackingId) {
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        return ParcelApi.super.reportParcelDelivery(trackingId);
     }
 
     @Override
     public ResponseEntity<Void> reportParcelHop(String trackingId, String code) {
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        return ParcelApi.super.reportParcelHop(trackingId, code);
+    }
+
+    @Override
+    public ResponseEntity<NewParcelInfo> submitParcel(Parcel parcel) {
+        return ParcelApi.super.submitParcel(parcel);
+    }
+
+    @Override
+    public ResponseEntity<TrackingInformation> trackParcel(String trackingId) {
+        return ParcelApi.super.trackParcel(trackingId);
     }
 
     @Override
     public ResponseEntity<NewParcelInfo> transitionParcel(String trackingId, Parcel parcel) {
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        return ParcelApi.super.transitionParcel(trackingId, parcel);
     }
-
 }

@@ -6,6 +6,7 @@ import at.fhtw.swen3.persistence.repositories.RecipientRepository;
 import at.fhtw.swen3.services.ParcelService;
 import at.fhtw.swen3.services.dto.Parcel;
 import at.fhtw.swen3.services.mapper.ParcelMapper;
+import at.fhtw.swen3.services.mapper.ParcelMapperImpl;
 import at.fhtw.swen3.services.validation.Validator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,8 @@ public class ParcelServiceImpl implements ParcelService {
     private final RecipientRepository recipientRepository;
     private final ParcelRepository parcelRepository;
     private final Validator validator;
+
+    private ParcelMapperImpl mapper;
 
     public ParcelServiceImpl(RecipientRepository recipientRepository, ParcelRepository parcelRepository, Validator validator) {
         this.recipientRepository = recipientRepository;
