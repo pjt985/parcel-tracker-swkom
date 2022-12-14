@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,15 +13,16 @@ import java.util.List;
 @Setter
 @Entity(name = "warehouse_entity")
 public class WarehouseEntity extends HopEntity {
-    @Id
+    /*@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
-    private Long id;
+    private Long id;*/
 
     @Column
     private Integer level;
 
-    @OneToMany
+    @OneToMany(mappedBy = "warehouse")
     @Column
+    @NotNull
     private List<WarehouseNextHopsEntity> nextHops = new ArrayList<>();
 }

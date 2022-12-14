@@ -34,7 +34,7 @@ public class ParcelMapperTest {
         parcel.setSender(sender);
         parcel.setWeight(12.0f);
 
-        ParcelEntity parcelEntity = ParcelMapper.INSTANCE.dtoToEntity(parcel);
+        ParcelEntity parcelEntity = ParcelMapper.INSTANCE.dtoToParcelEntity(parcel);
 
         assertEquals(parcel.getRecipient().getName(), parcelEntity.getRecipient().getName());
         assertEquals(parcel.getRecipient().getStreet(), parcelEntity.getRecipient().getStreet());

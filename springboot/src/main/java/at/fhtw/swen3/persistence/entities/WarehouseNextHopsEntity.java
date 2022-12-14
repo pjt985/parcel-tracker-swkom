@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 
 @Getter
@@ -12,9 +13,16 @@ import javax.persistence.*;
 public class WarehouseNextHopsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
+    private Long id;
+
+    @Column
     private Integer traveltimeMins;
 
+    @NotNull
     @OneToOne
     private HopEntity hopEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "warehouse")
+    private WarehouseEntity warehouse;
 }

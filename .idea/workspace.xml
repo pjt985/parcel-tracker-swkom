@@ -4,32 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cac2660-d108-4ab7-85de-64101e450772" name="Changes" comment="Updated project structure">
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/GeoCoordinateMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/HopArrivalMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/HopMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/ParcelMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/RecipientMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/TransferwarehouseMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/TruckMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/WarehouseMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperTest.java" afterDir="false" />
+    <list default="true" id="9cac2660-d108-4ab7-85de-64101e450772" name="Changes" comment="Added Unit Tests">
+      <change afterPath="$PROJECT_DIR$/springboot/.github/workflows/build.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/gps/GeoEncodingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/gps/service/OpenStreetMapsProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/persistence/repositories/DatabaseConnectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/persistence/repositories/ParcelRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/persistence/repositories/WarehouseRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/demo.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/data/demo.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/data/demo.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot/openapi-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/openapi-spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/configuration/SpringDocConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/configuration/SpringDocConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/controller/WarehouseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/controller/WarehouseApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/controller/rest/ParcelApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/controller/rest/ParcelApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/controller/rest/WarehouseApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/controller/rest/WarehouseApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/entities/HopEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/entities/HopEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/entities/WarehouseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/entities/WarehouseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/entities/WarehouseNextHopsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/entities/WarehouseNextHopsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/repositories/ParcelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/repositories/ParcelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/repositories/WarehouseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/persistence/repositories/WarehouseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/ParcelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/ParcelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/WarehouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/WarehouseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/impl/ParcelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/impl/ParcelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/impl/WarehouseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/impl/WarehouseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/mapper/ParcelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/at/fhtw/swen3/services/mapper/ParcelMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/ParcelMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/test/at/fhtw/swen3/services/mapper/ParcelMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +104,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
     "spring.configuration.checksum": "08adcde538376bb5a08c58ed482641aa",
     "vue.rearranger.settings.migration": "true"
   },
@@ -110,7 +114,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.at.fhtw.swen3.services.mapper in openapi-spring">
+  <component name="RunManager" selected="JUnit.ParcelRepositoryTest">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -147,22 +151,22 @@
       <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="HopMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseConnectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="at.fhtw.swen3.services.mapper.*" />
+          <option name="PATTERN" value="at.fhtw.swen3.persistence.repositories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="at.fhtw.swen3.services.mapper" />
-      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.services.mapper.HopMapperTest" />
+      <option name="PACKAGE_NAME" value="at.fhtw.swen3.persistence.repositories" />
+      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.persistence.repositories.DatabaseConnectionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransferwarehouseMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParcelMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
@@ -171,37 +175,37 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="at.fhtw.swen3.services.mapper" />
-      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.services.mapper.TransferwarehouseMapperTest" />
+      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.services.mapper.ParcelMapperTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TruckMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParcelRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="at.fhtw.swen3.services.mapper.*" />
+          <option name="PATTERN" value="at.fhtw.swen3.persistence.repositories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="at.fhtw.swen3.services.mapper" />
-      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.services.mapper.TruckMapperTest" />
+      <option name="PACKAGE_NAME" value="at.fhtw.swen3.persistence.repositories" />
+      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.persistence.repositories.ParcelRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WarehouseNextHopsMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WarehouseRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="at.fhtw.swen3.services.mapper.*" />
+          <option name="PATTERN" value="at.fhtw.swen3.persistence.repositories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="at.fhtw.swen3.services.mapper" />
-      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.services.mapper.WarehouseNextHopsMapperTest" />
+      <option name="PACKAGE_NAME" value="at.fhtw.swen3.persistence.repositories" />
+      <option name="MAIN_CLASS_NAME" value="at.fhtw.swen3.persistence.repositories.WarehouseRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,11 +241,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParcelRepositoryTest" />
+        <item itemvalue="JUnit.WarehouseRepositoryTest" />
+        <item itemvalue="JUnit.DatabaseConnectionTest" />
         <item itemvalue="JUnit.at.fhtw.swen3.services.mapper in openapi-spring" />
-        <item itemvalue="JUnit.WarehouseNextHopsMapperTest" />
-        <item itemvalue="JUnit.TruckMapperTest" />
-        <item itemvalue="JUnit.TransferwarehouseMapperTest" />
-        <item itemvalue="JUnit.HopMapperTest" />
+        <item itemvalue="JUnit.ParcelMapperTest" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +265,9 @@
       <workItem from="1670353247747" duration="10186000" />
       <workItem from="1670786842618" duration="8011000" />
       <workItem from="1670934099130" duration="1535000" />
-      <workItem from="1670935641649" duration="9652000" />
+      <workItem from="1670935641649" duration="10103000" />
+      <workItem from="1671037415963" duration="14380000" />
+      <workItem from="1671053524336" duration="4979000" />
     </task>
     <task id="LOCAL-00001" summary="h2 database can connect but problems with beans">
       <created>1669632556637</created>
@@ -494,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670935548624</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added Unit Tests">
+      <created>1670953147671</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1670953147671</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,6 +538,7 @@
     <MESSAGE value="all the hops and warehouses" />
     <MESSAGE value="Added .gitignore" />
     <MESSAGE value="Updated project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated project structure" />
+    <MESSAGE value="Added Unit Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Unit Tests" />
   </component>
 </project>

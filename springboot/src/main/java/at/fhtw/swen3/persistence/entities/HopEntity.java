@@ -35,6 +35,5 @@ public class HopEntity {
     private String locationName;
 
     @OneToOne
-    @NotNull(message = "GeoCoordinates cannot be null")
     private GeoCoordinateEntity locationCoordinates;
 }

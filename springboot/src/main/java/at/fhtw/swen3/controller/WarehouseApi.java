@@ -10,11 +10,9 @@ import at.fhtw.swen3.services.dto.Hop;
 import at.fhtw.swen3.services.dto.Warehouse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -22,12 +20,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.NativeWebRequest;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
-import javax.validation.constraints.*;
-import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 import javax.annotation.Generated;
 
@@ -87,10 +81,10 @@ public interface WarehouseApi {
     /**
      * GET /warehouse/{code} : Get a certain warehouse or truck by code
      *
-     * @param code  (required)
+     * @param code (required)
      * @return Successful response (status code 200)
-     *         or The operation failed due to an error. (status code 400)
-     *         or No hop with the specified id could be found. (status code 404)
+     * or The operation failed due to an error. (status code 400)
+     * or No hop with the specified id could be found. (status code 404)
      */
     @Operation(
         operationId = "getWarehouse",
@@ -111,7 +105,7 @@ public interface WarehouseApi {
         value = "/warehouse/{code}",
         produces = { "application/json" }
     )
-    default ResponseEntity<Hop> getWarehouse(
+    default ResponseEntity<Warehouse> getWarehouse(
         @Parameter(name = "code", description = "", required = true) @PathVariable("code") String code
     ) {
         getRequest().ifPresent(request -> {

@@ -1,0 +1,247 @@
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.GeoCoordinateEntity;\r\nimport at.fhtw.swen3.persistence.entities.HopEntity;\r\nimport at.fhtw.swen3.services.dto.GeoCoordinate;\r\nimport at.fhtw.swen3.services.dto.Hop;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:44+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class HopMapperImpl implements HopMapper {\r\n\r\n    @Override\r\n    public HopEntity dtoToEntity(Hop hop) {\r\n        if ( hop == null ) {\r\n            return null;\r\n        }\r\n\r\n        HopEntity hopEntity = new HopEntity();\r\n\r\n        hopEntity.setHopType( hop.getHopType() );\r\n        hopEntity.setCode( hop.getCode() );\r\n        hopEntity.setDescription( hop.getDescription() );\r\n        hopEntity.setProcessingDelayMins( hop.getProcessingDelayMins() );\r\n        hopEntity.setLocationName( hop.getLocationName() );\r\n        hopEntity.setLocationCoordinates( geoCoordinateToGeoCoordinateEntity( hop.getLocationCoordinates() ) );\r\n\r\n        return hopEntity;\r\n    }\r\n\r\n    @Override\r\n    public Hop entityToDto(HopEntity hopEntity) {\r\n        if ( hopEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        Hop hop = new Hop();\r\n\r\n        hop.setHopType( hopEntity.getHopType() );\r\n        hop.setCode( hopEntity.getCode() );\r\n        hop.setDescription( hopEntity.getDescription() );\r\n        hop.setProcessingDelayMins( hopEntity.getProcessingDelayMins() );\r\n        hop.setLocationName( hopEntity.getLocationName() );\r\n        hop.setLocationCoordinates( geoCoordinateEntityToGeoCoordinate( hopEntity.getLocationCoordinates() ) );\r\n\r\n        return hop;\r\n    }\r\n\r\n    protected GeoCoordinateEntity geoCoordinateToGeoCoordinateEntity(GeoCoordinate geoCoordinate) {\r\n        if ( geoCoordinate == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinateEntity geoCoordinateEntity = new GeoCoordinateEntity();\r\n\r\n        geoCoordinateEntity.setLat( geoCoordinate.getLat() );\r\n        geoCoordinateEntity.setLon( geoCoordinate.getLon() );\r\n\r\n        return geoCoordinateEntity;\r\n    }\r\n\r\n    protected GeoCoordinate geoCoordinateEntityToGeoCoordinate(GeoCoordinateEntity geoCoordinateEntity) {\r\n        if ( geoCoordinateEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinate geoCoordinate = new GeoCoordinate();\r\n\r\n        geoCoordinate.setLat( geoCoordinateEntity.getLat() );\r\n        geoCoordinate.setLon( geoCoordinateEntity.getLon() );\r\n\r\n        return geoCoordinate;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java	
+@@ -8,8 +8,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:44+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class HopMapperImpl implements HopMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.ParcelEntity;\r\nimport at.fhtw.swen3.services.dto.NewParcelInfo;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:42+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class NewParcelInfoMapperImpl implements NewParcelInfoMapper {\r\n\r\n    @Override\r\n    public ParcelEntity dtoToEntity(NewParcelInfo newParcelInfo) {\r\n        if ( newParcelInfo == null ) {\r\n            return null;\r\n        }\r\n\r\n        ParcelEntity parcelEntity = new ParcelEntity();\r\n\r\n        parcelEntity.setTrackingId( newParcelInfo.getTrackingId() );\r\n\r\n        return parcelEntity;\r\n    }\r\n\r\n    @Override\r\n    public NewParcelInfo entityToDto(ParcelEntity parcelEntity) {\r\n        if ( parcelEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        NewParcelInfo newParcelInfo = new NewParcelInfo();\r\n\r\n        newParcelInfo.setTrackingId( parcelEntity.getTrackingId() );\r\n\r\n        return newParcelInfo;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java	
+@@ -6,8 +6,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:42+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class NewParcelInfoMapperImpl implements NewParcelInfoMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.GeoCoordinateEntity;\r\nimport at.fhtw.swen3.services.dto.GeoCoordinate;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:44+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class GeoCoordinateMapperImpl implements GeoCoordinateMapper {\r\n\r\n    @Override\r\n    public GeoCoordinateEntity dtoToEntity(GeoCoordinate geoCoordinate) {\r\n        if ( geoCoordinate == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinateEntity geoCoordinateEntity = new GeoCoordinateEntity();\r\n\r\n        geoCoordinateEntity.setLat( geoCoordinate.getLat() );\r\n        geoCoordinateEntity.setLon( geoCoordinate.getLon() );\r\n\r\n        return geoCoordinateEntity;\r\n    }\r\n\r\n    @Override\r\n    public GeoCoordinate entityToDto(GeoCoordinateEntity geoCoordinateEntity) {\r\n        if ( geoCoordinateEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinate geoCoordinate = new GeoCoordinate();\r\n\r\n        geoCoordinate.setLat( geoCoordinateEntity.getLat() );\r\n        geoCoordinate.setLon( geoCoordinateEntity.getLon() );\r\n\r\n        return geoCoordinate;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java	
+@@ -6,8 +6,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:44+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class GeoCoordinateMapperImpl implements GeoCoordinateMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.HopArrivalEntity;\r\nimport at.fhtw.swen3.services.dto.HopArrival;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:42+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class HopArrivalMapperImpl implements HopArrivalMapper {\r\n\r\n    @Override\r\n    public HopArrivalEntity dtoToEntity(HopArrival hopArrival) {\r\n        if ( hopArrival == null ) {\r\n            return null;\r\n        }\r\n\r\n        HopArrivalEntity hopArrivalEntity = new HopArrivalEntity();\r\n\r\n        hopArrivalEntity.setCode( hopArrival.getCode() );\r\n        hopArrivalEntity.setDescription( hopArrival.getDescription() );\r\n        hopArrivalEntity.setDateTime( hopArrival.getDateTime() );\r\n\r\n        return hopArrivalEntity;\r\n    }\r\n\r\n    @Override\r\n    public HopArrival entityToDto(HopArrivalEntity hopArrivalEntity) {\r\n        if ( hopArrivalEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        HopArrival hopArrival = new HopArrival();\r\n\r\n        hopArrival.setCode( hopArrivalEntity.getCode() );\r\n        hopArrival.setDescription( hopArrivalEntity.getDescription() );\r\n        hopArrival.setDateTime( hopArrivalEntity.getDateTime() );\r\n\r\n        return hopArrival;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java	
+@@ -6,8 +6,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:42+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class HopArrivalMapperImpl implements HopArrivalMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.HopArrivalEntity;\r\nimport at.fhtw.swen3.persistence.entities.ParcelEntity;\r\nimport at.fhtw.swen3.services.dto.HopArrival;\r\nimport at.fhtw.swen3.services.dto.TrackingInformation;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:44+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class TrackingInformationMapperImpl implements TrackingInformationMapper {\r\n\r\n    @Override\r\n    public ParcelEntity dtoToEntity(TrackingInformation trackingInformation) {\r\n        if ( trackingInformation == null ) {\r\n            return null;\r\n        }\r\n\r\n        ParcelEntity parcelEntity = new ParcelEntity();\r\n\r\n        parcelEntity.setState( trackingInformation.getState() );\r\n        parcelEntity.setVisitedHops( hopArrivalListToHopArrivalEntityList( trackingInformation.getVisitedHops() ) );\r\n        parcelEntity.setFutureHops( hopArrivalListToHopArrivalEntityList1( trackingInformation.getFutureHops() ) );\r\n\r\n        return parcelEntity;\r\n    }\r\n\r\n    @Override\r\n    public TrackingInformation entityToDto(ParcelEntity parcelEntity) {\r\n        if ( parcelEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        TrackingInformation trackingInformation = new TrackingInformation();\r\n\r\n        trackingInformation.setState( parcelEntity.getState() );\r\n        trackingInformation.setVisitedHops( hopArrivalEntityListToHopArrivalList( parcelEntity.getVisitedHops() ) );\r\n        trackingInformation.setFutureHops( hopArrivalEntityListToHopArrivalList1( parcelEntity.getFutureHops() ) );\r\n\r\n        return trackingInformation;\r\n    }\r\n\r\n    protected HopArrivalEntity hopArrivalToHopArrivalEntity(HopArrival hopArrival) {\r\n        if ( hopArrival == null ) {\r\n            return null;\r\n        }\r\n\r\n        HopArrivalEntity hopArrivalEntity = new HopArrivalEntity();\r\n\r\n        hopArrivalEntity.setCode( hopArrival.getCode() );\r\n        hopArrivalEntity.setDescription( hopArrival.getDescription() );\r\n        hopArrivalEntity.setDateTime( hopArrival.getDateTime() );\r\n\r\n        return hopArrivalEntity;\r\n    }\r\n\r\n    protected List<HopArrivalEntity> hopArrivalListToHopArrivalEntityList(List<HopArrival> list) {\r\n        if ( list == null ) {\r\n            return null;\r\n        }\r\n\r\n        List<HopArrivalEntity> list1 = new ArrayList<HopArrivalEntity>( list.size() );\r\n        for ( HopArrival hopArrival : list ) {\r\n            list1.add( hopArrivalToHopArrivalEntity( hopArrival ) );\r\n        }\r\n\r\n        return list1;\r\n    }\r\n\r\n    protected List<HopArrivalEntity> hopArrivalListToHopArrivalEntityList1(List<HopArrival> list) {\r\n        if ( list == null ) {\r\n            return null;\r\n        }\r\n\r\n        List<HopArrivalEntity> list1 = new ArrayList<HopArrivalEntity>( list.size() );\r\n        for ( HopArrival hopArrival : list ) {\r\n            list1.add( hopArrivalToHopArrivalEntity( hopArrival ) );\r\n        }\r\n\r\n        return list1;\r\n    }\r\n\r\n    protected HopArrival hopArrivalEntityToHopArrival(HopArrivalEntity hopArrivalEntity) {\r\n        if ( hopArrivalEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        HopArrival hopArrival = new HopArrival();\r\n\r\n        hopArrival.setCode( hopArrivalEntity.getCode() );\r\n        hopArrival.setDescription( hopArrivalEntity.getDescription() );\r\n        hopArrival.setDateTime( hopArrivalEntity.getDateTime() );\r\n\r\n        return hopArrival;\r\n    }\r\n\r\n    protected List<HopArrival> hopArrivalEntityListToHopArrivalList(List<HopArrivalEntity> list) {\r\n        if ( list == null ) {\r\n            return null;\r\n        }\r\n\r\n        List<HopArrival> list1 = new ArrayList<HopArrival>( list.size() );\r\n        for ( HopArrivalEntity hopArrivalEntity : list ) {\r\n            list1.add( hopArrivalEntityToHopArrival( hopArrivalEntity ) );\r\n        }\r\n\r\n        return list1;\r\n    }\r\n\r\n    protected List<HopArrival> hopArrivalEntityListToHopArrivalList1(List<HopArrivalEntity> list) {\r\n        if ( list == null ) {\r\n            return null;\r\n        }\r\n\r\n        List<HopArrival> list1 = new ArrayList<HopArrival>( list.size() );\r\n        for ( HopArrivalEntity hopArrivalEntity : list ) {\r\n            list1.add( hopArrivalEntityToHopArrival( hopArrivalEntity ) );\r\n        }\r\n\r\n        return list1;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java	
+@@ -10,8 +10,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:44+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class TrackingInformationMapperImpl implements TrackingInformationMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.GeoCoordinateEntity;\r\nimport at.fhtw.swen3.persistence.entities.TransferwarehouseEntity;\r\nimport at.fhtw.swen3.services.dto.GeoCoordinate;\r\nimport at.fhtw.swen3.services.dto.Transferwarehouse;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:44+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class TransferwarehouseMapperImpl implements TransferwarehouseMapper {\r\n\r\n    @Override\r\n    public TransferwarehouseEntity dtoToEntity(Transferwarehouse transferwarehouse) {\r\n        if ( transferwarehouse == null ) {\r\n            return null;\r\n        }\r\n\r\n        TransferwarehouseEntity transferwarehouseEntity = new TransferwarehouseEntity();\r\n\r\n        transferwarehouseEntity.setHopType( transferwarehouse.getHopType() );\r\n        transferwarehouseEntity.setCode( transferwarehouse.getCode() );\r\n        transferwarehouseEntity.setDescription( transferwarehouse.getDescription() );\r\n        transferwarehouseEntity.setProcessingDelayMins( transferwarehouse.getProcessingDelayMins() );\r\n        transferwarehouseEntity.setLocationName( transferwarehouse.getLocationName() );\r\n        transferwarehouseEntity.setLocationCoordinates( geoCoordinateToGeoCoordinateEntity( transferwarehouse.getLocationCoordinates() ) );\r\n        transferwarehouseEntity.setRegionGeoJson( transferwarehouse.getRegionGeoJson() );\r\n        transferwarehouseEntity.setLogisticsPartner( transferwarehouse.getLogisticsPartner() );\r\n        transferwarehouseEntity.setLogisticsPartnerUrl( transferwarehouse.getLogisticsPartnerUrl() );\r\n\r\n        return transferwarehouseEntity;\r\n    }\r\n\r\n    @Override\r\n    public Transferwarehouse entityToDto(TransferwarehouseEntity transferwarehouseEntity) {\r\n        if ( transferwarehouseEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        Transferwarehouse transferwarehouse = new Transferwarehouse();\r\n\r\n        transferwarehouse.hopType( transferwarehouseEntity.getHopType() );\r\n        transferwarehouse.code( transferwarehouseEntity.getCode() );\r\n        transferwarehouse.description( transferwarehouseEntity.getDescription() );\r\n        transferwarehouse.processingDelayMins( transferwarehouseEntity.getProcessingDelayMins() );\r\n        transferwarehouse.locationName( transferwarehouseEntity.getLocationName() );\r\n        transferwarehouse.locationCoordinates( geoCoordinateEntityToGeoCoordinate( transferwarehouseEntity.getLocationCoordinates() ) );\r\n        transferwarehouse.setRegionGeoJson( transferwarehouseEntity.getRegionGeoJson() );\r\n        transferwarehouse.setLogisticsPartner( transferwarehouseEntity.getLogisticsPartner() );\r\n        transferwarehouse.setLogisticsPartnerUrl( transferwarehouseEntity.getLogisticsPartnerUrl() );\r\n\r\n        return transferwarehouse;\r\n    }\r\n\r\n    protected GeoCoordinateEntity geoCoordinateToGeoCoordinateEntity(GeoCoordinate geoCoordinate) {\r\n        if ( geoCoordinate == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinateEntity geoCoordinateEntity = new GeoCoordinateEntity();\r\n\r\n        geoCoordinateEntity.setLat( geoCoordinate.getLat() );\r\n        geoCoordinateEntity.setLon( geoCoordinate.getLon() );\r\n\r\n        return geoCoordinateEntity;\r\n    }\r\n\r\n    protected GeoCoordinate geoCoordinateEntityToGeoCoordinate(GeoCoordinateEntity geoCoordinateEntity) {\r\n        if ( geoCoordinateEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinate geoCoordinate = new GeoCoordinate();\r\n\r\n        geoCoordinate.setLat( geoCoordinateEntity.getLat() );\r\n        geoCoordinate.setLon( geoCoordinateEntity.getLon() );\r\n\r\n        return geoCoordinate;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java	
+@@ -8,8 +8,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:44+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class TransferwarehouseMapperImpl implements TransferwarehouseMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.ParcelEntity;\r\nimport at.fhtw.swen3.persistence.entities.RecipientEntity;\r\nimport at.fhtw.swen3.services.dto.Parcel;\r\nimport at.fhtw.swen3.services.dto.Recipient;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:44+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class ParcelMapperImpl implements ParcelMapper {\r\n\r\n    @Override\r\n    public ParcelEntity dtoToEntity(Parcel parcel) {\r\n        if ( parcel == null ) {\r\n            return null;\r\n        }\r\n\r\n        ParcelEntity parcelEntity = new ParcelEntity();\r\n\r\n        if ( parcel.getWeight() != null ) {\r\n            parcelEntity.setWeight( parcel.getWeight() );\r\n        }\r\n        parcelEntity.setSender( recipientToRecipientEntity( parcel.getSender() ) );\r\n        parcelEntity.setRecipient( recipientToRecipientEntity( parcel.getRecipient() ) );\r\n\r\n        return parcelEntity;\r\n    }\r\n\r\n    @Override\r\n    public Parcel entityToDto(ParcelEntity parcelEntity) {\r\n        if ( parcelEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        Parcel parcel = new Parcel();\r\n\r\n        parcel.setWeight( parcelEntity.getWeight() );\r\n        parcel.setRecipient( recipientEntityToRecipient( parcelEntity.getRecipient() ) );\r\n        parcel.setSender( recipientEntityToRecipient( parcelEntity.getSender() ) );\r\n\r\n        return parcel;\r\n    }\r\n\r\n    protected RecipientEntity recipientToRecipientEntity(Recipient recipient) {\r\n        if ( recipient == null ) {\r\n            return null;\r\n        }\r\n\r\n        RecipientEntity recipientEntity = new RecipientEntity();\r\n\r\n        recipientEntity.setName( recipient.getName() );\r\n        recipientEntity.setCountry( recipient.getCountry() );\r\n        recipientEntity.setCity( recipient.getCity() );\r\n        recipientEntity.setStreet( recipient.getStreet() );\r\n        recipientEntity.setPostalCode( recipient.getPostalCode() );\r\n\r\n        return recipientEntity;\r\n    }\r\n\r\n    protected Recipient recipientEntityToRecipient(RecipientEntity recipientEntity) {\r\n        if ( recipientEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        Recipient recipient = new Recipient();\r\n\r\n        recipient.setName( recipientEntity.getName() );\r\n        recipient.setStreet( recipientEntity.getStreet() );\r\n        recipient.setPostalCode( recipientEntity.getPostalCode() );\r\n        recipient.setCity( recipientEntity.getCity() );\r\n        recipient.setCountry( recipientEntity.getCountry() );\r\n\r\n        return recipient;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java	
+@@ -8,8 +8,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:44+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class ParcelMapperImpl implements ParcelMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.RecipientEntity;\r\nimport at.fhtw.swen3.services.dto.Recipient;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:44+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class RecipientMapperImpl implements RecipientMapper {\r\n\r\n    @Override\r\n    public RecipientEntity dtoToEntity(Recipient recipient) {\r\n        if ( recipient == null ) {\r\n            return null;\r\n        }\r\n\r\n        RecipientEntity recipientEntity = new RecipientEntity();\r\n\r\n        recipientEntity.setName( recipient.getName() );\r\n        recipientEntity.setCountry( recipient.getCountry() );\r\n        recipientEntity.setCity( recipient.getCity() );\r\n        recipientEntity.setStreet( recipient.getStreet() );\r\n        recipientEntity.setPostalCode( recipient.getPostalCode() );\r\n\r\n        return recipientEntity;\r\n    }\r\n\r\n    @Override\r\n    public Recipient entityToDto(RecipientEntity recipientEntity) {\r\n        if ( recipientEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        Recipient recipient = new Recipient();\r\n\r\n        recipient.setName( recipientEntity.getName() );\r\n        recipient.setStreet( recipientEntity.getStreet() );\r\n        recipient.setPostalCode( recipientEntity.getPostalCode() );\r\n        recipient.setCity( recipientEntity.getCity() );\r\n        recipient.setCountry( recipientEntity.getCountry() );\r\n\r\n        return recipient;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java	
+@@ -6,8 +6,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:44+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class RecipientMapperImpl implements RecipientMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.WarehouseNextHopsEntity;\r\nimport at.fhtw.swen3.services.dto.WarehouseNextHops;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:44+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class WarehouseNextHopsMapperImpl implements WarehouseNextHopsMapper {\r\n\r\n    @Override\r\n    public WarehouseNextHopsEntity dtoToEntity(WarehouseNextHops warehouseNextHops) {\r\n        if ( warehouseNextHops == null ) {\r\n            return null;\r\n        }\r\n\r\n        WarehouseNextHopsEntity warehouseNextHopsEntity = new WarehouseNextHopsEntity();\r\n\r\n        warehouseNextHopsEntity.setTraveltimeMins( warehouseNextHops.getTraveltimeMins() );\r\n\r\n        return warehouseNextHopsEntity;\r\n    }\r\n\r\n    @Override\r\n    public WarehouseNextHops entityToDto(WarehouseNextHopsEntity warehouseNextHopsEntity) {\r\n        if ( warehouseNextHopsEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        WarehouseNextHops warehouseNextHops = new WarehouseNextHops();\r\n\r\n        warehouseNextHops.setTraveltimeMins( warehouseNextHopsEntity.getTraveltimeMins() );\r\n\r\n        return warehouseNextHops;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java	
+@@ -6,8 +6,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:44+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class WarehouseNextHopsMapperImpl implements WarehouseNextHopsMapper {
+ 
+Index: springboot/target/classes/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server.port=5000\r\nspring.jackson.date-format=at.fhtw.swen3.RFC3339DateFormat\r\nspring.jackson.serialization.WRITE_DATES_AS_TIMESTAMPS=false\r\n\r\n#spring.datasource.url=jdbc:postgresql://localhost:5432/postgres\r\n#spring.datasource.username=postgres\r\n#spring.datasource.password=mysecretpassword\r\n#spring.jpa.show-sql=true\r\n#spring.jpa.properties.hibernate.hbm2ddl.auto=update\r\n\r\nspring.datasource.url=jdbc:h2:file:./data/demo\r\nspring.datasource.driverClassName=org.h2.Driver\r\nspring.datasource.username= sa\r\nspring.datasource.password= password\r\nspring.jpa.database-platform=org.hibernate.dialect.H2Dialect\r\nspring.h2.console.enabled=true\r\n# 4.2 -> https://www.baeldung.com/spring-boot-h2-database\r\nspring.jpa.defer-datasource-initialization=true\r\nspring.jpa.hibernate.ddl-auto=create-drop\r\n\r\n#dbUrl=jdbc:postgresql://localhost:5432/parceltracker\r\n#dbUsername=swkom\r\n#dbPassword=mysecretpassword
+===================================================================
+diff --git a/springboot/target/classes/application.properties b/springboot/target/classes/application.properties
+--- a/springboot/target/classes/application.properties	
++++ b/springboot/target/classes/application.properties	
+@@ -10,8 +10,8 @@
+ 
+ spring.datasource.url=jdbc:h2:file:./data/demo
+ spring.datasource.driverClassName=org.h2.Driver
+-spring.datasource.username= sa
+-spring.datasource.password= password
++spring.datasource.username=sa
++spring.datasource.password=password
+ spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+ spring.h2.console.enabled=true
+ # 4.2 -> https://www.baeldung.com/spring-boot-h2-database
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.GeoCoordinateEntity;\r\nimport at.fhtw.swen3.persistence.entities.TruckEntity;\r\nimport at.fhtw.swen3.services.dto.GeoCoordinate;\r\nimport at.fhtw.swen3.services.dto.Truck;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:44+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class TruckMapperImpl implements TruckMapper {\r\n\r\n    @Override\r\n    public TruckEntity dtoToEntity(Truck truck) {\r\n        if ( truck == null ) {\r\n            return null;\r\n        }\r\n\r\n        TruckEntity truckEntity = new TruckEntity();\r\n\r\n        truckEntity.setHopType( truck.getHopType() );\r\n        truckEntity.setCode( truck.getCode() );\r\n        truckEntity.setDescription( truck.getDescription() );\r\n        truckEntity.setProcessingDelayMins( truck.getProcessingDelayMins() );\r\n        truckEntity.setLocationName( truck.getLocationName() );\r\n        truckEntity.setLocationCoordinates( geoCoordinateToGeoCoordinateEntity( truck.getLocationCoordinates() ) );\r\n        truckEntity.setRegionGeoJson( truck.getRegionGeoJson() );\r\n        truckEntity.setNumberPlate( truck.getNumberPlate() );\r\n\r\n        return truckEntity;\r\n    }\r\n\r\n    @Override\r\n    public Truck entityToDto(TruckEntity truckEntity) {\r\n        if ( truckEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        Truck truck = new Truck();\r\n\r\n        truck.hopType( truckEntity.getHopType() );\r\n        truck.code( truckEntity.getCode() );\r\n        truck.description( truckEntity.getDescription() );\r\n        truck.processingDelayMins( truckEntity.getProcessingDelayMins() );\r\n        truck.locationName( truckEntity.getLocationName() );\r\n        truck.locationCoordinates( geoCoordinateEntityToGeoCoordinate( truckEntity.getLocationCoordinates() ) );\r\n        truck.setRegionGeoJson( truckEntity.getRegionGeoJson() );\r\n        truck.setNumberPlate( truckEntity.getNumberPlate() );\r\n\r\n        return truck;\r\n    }\r\n\r\n    protected GeoCoordinateEntity geoCoordinateToGeoCoordinateEntity(GeoCoordinate geoCoordinate) {\r\n        if ( geoCoordinate == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinateEntity geoCoordinateEntity = new GeoCoordinateEntity();\r\n\r\n        geoCoordinateEntity.setLat( geoCoordinate.getLat() );\r\n        geoCoordinateEntity.setLon( geoCoordinate.getLon() );\r\n\r\n        return geoCoordinateEntity;\r\n    }\r\n\r\n    protected GeoCoordinate geoCoordinateEntityToGeoCoordinate(GeoCoordinateEntity geoCoordinateEntity) {\r\n        if ( geoCoordinateEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinate geoCoordinate = new GeoCoordinate();\r\n\r\n        geoCoordinate.setLat( geoCoordinateEntity.getLat() );\r\n        geoCoordinate.setLon( geoCoordinateEntity.getLon() );\r\n\r\n        return geoCoordinate;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java	
+@@ -8,8 +8,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:44+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class TruckMapperImpl implements TruckMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.GeoCoordinateEntity;\r\nimport at.fhtw.swen3.persistence.entities.WarehouseEntity;\r\nimport at.fhtw.swen3.persistence.entities.WarehouseNextHopsEntity;\r\nimport at.fhtw.swen3.services.dto.GeoCoordinate;\r\nimport at.fhtw.swen3.services.dto.Warehouse;\r\nimport at.fhtw.swen3.services.dto.WarehouseNextHops;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:43+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class WarehouseMapperImpl implements WarehouseMapper {\r\n\r\n    @Override\r\n    public WarehouseEntity dtoToEntity(Warehouse warehouse) {\r\n        if ( warehouse == null ) {\r\n            return null;\r\n        }\r\n\r\n        WarehouseEntity warehouseEntity = new WarehouseEntity();\r\n\r\n        warehouseEntity.setHopType( warehouse.getHopType() );\r\n        warehouseEntity.setCode( warehouse.getCode() );\r\n        warehouseEntity.setDescription( warehouse.getDescription() );\r\n        warehouseEntity.setProcessingDelayMins( warehouse.getProcessingDelayMins() );\r\n        warehouseEntity.setLocationName( warehouse.getLocationName() );\r\n        warehouseEntity.setLocationCoordinates( geoCoordinateToGeoCoordinateEntity( warehouse.getLocationCoordinates() ) );\r\n        warehouseEntity.setLevel( warehouse.getLevel() );\r\n        warehouseEntity.setNextHops( warehouseNextHopsListToWarehouseNextHopsEntityList( warehouse.getNextHops() ) );\r\n\r\n        return warehouseEntity;\r\n    }\r\n\r\n    @Override\r\n    public Warehouse entityToDto(WarehouseEntity warehouseEntity) {\r\n        if ( warehouseEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        Warehouse warehouse = new Warehouse();\r\n\r\n        warehouse.hopType( warehouseEntity.getHopType() );\r\n        warehouse.code( warehouseEntity.getCode() );\r\n        warehouse.description( warehouseEntity.getDescription() );\r\n        warehouse.processingDelayMins( warehouseEntity.getProcessingDelayMins() );\r\n        warehouse.locationName( warehouseEntity.getLocationName() );\r\n        warehouse.locationCoordinates( geoCoordinateEntityToGeoCoordinate( warehouseEntity.getLocationCoordinates() ) );\r\n        warehouse.setLevel( warehouseEntity.getLevel() );\r\n        warehouse.setNextHops( warehouseNextHopsEntityListToWarehouseNextHopsList( warehouseEntity.getNextHops() ) );\r\n\r\n        return warehouse;\r\n    }\r\n\r\n    protected GeoCoordinateEntity geoCoordinateToGeoCoordinateEntity(GeoCoordinate geoCoordinate) {\r\n        if ( geoCoordinate == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinateEntity geoCoordinateEntity = new GeoCoordinateEntity();\r\n\r\n        geoCoordinateEntity.setLat( geoCoordinate.getLat() );\r\n        geoCoordinateEntity.setLon( geoCoordinate.getLon() );\r\n\r\n        return geoCoordinateEntity;\r\n    }\r\n\r\n    protected WarehouseNextHopsEntity warehouseNextHopsToWarehouseNextHopsEntity(WarehouseNextHops warehouseNextHops) {\r\n        if ( warehouseNextHops == null ) {\r\n            return null;\r\n        }\r\n\r\n        WarehouseNextHopsEntity warehouseNextHopsEntity = new WarehouseNextHopsEntity();\r\n\r\n        warehouseNextHopsEntity.setTraveltimeMins( warehouseNextHops.getTraveltimeMins() );\r\n\r\n        return warehouseNextHopsEntity;\r\n    }\r\n\r\n    protected List<WarehouseNextHopsEntity> warehouseNextHopsListToWarehouseNextHopsEntityList(List<WarehouseNextHops> list) {\r\n        if ( list == null ) {\r\n            return null;\r\n        }\r\n\r\n        List<WarehouseNextHopsEntity> list1 = new ArrayList<WarehouseNextHopsEntity>( list.size() );\r\n        for ( WarehouseNextHops warehouseNextHops : list ) {\r\n            list1.add( warehouseNextHopsToWarehouseNextHopsEntity( warehouseNextHops ) );\r\n        }\r\n\r\n        return list1;\r\n    }\r\n\r\n    protected GeoCoordinate geoCoordinateEntityToGeoCoordinate(GeoCoordinateEntity geoCoordinateEntity) {\r\n        if ( geoCoordinateEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        GeoCoordinate geoCoordinate = new GeoCoordinate();\r\n\r\n        geoCoordinate.setLat( geoCoordinateEntity.getLat() );\r\n        geoCoordinate.setLon( geoCoordinateEntity.getLon() );\r\n\r\n        return geoCoordinate;\r\n    }\r\n\r\n    protected WarehouseNextHops warehouseNextHopsEntityToWarehouseNextHops(WarehouseNextHopsEntity warehouseNextHopsEntity) {\r\n        if ( warehouseNextHopsEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        WarehouseNextHops warehouseNextHops = new WarehouseNextHops();\r\n\r\n        warehouseNextHops.setTraveltimeMins( warehouseNextHopsEntity.getTraveltimeMins() );\r\n\r\n        return warehouseNextHops;\r\n    }\r\n\r\n    protected List<WarehouseNextHops> warehouseNextHopsEntityListToWarehouseNextHopsList(List<WarehouseNextHopsEntity> list) {\r\n        if ( list == null ) {\r\n            return null;\r\n        }\r\n\r\n        List<WarehouseNextHops> list1 = new ArrayList<WarehouseNextHops>( list.size() );\r\n        for ( WarehouseNextHopsEntity warehouseNextHopsEntity : list ) {\r\n            list1.add( warehouseNextHopsEntityToWarehouseNextHops( warehouseNextHopsEntity ) );\r\n        }\r\n\r\n        return list1;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java	
+@@ -12,8 +12,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:43+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class WarehouseMapperImpl implements WarehouseMapper {
+ 
+Index: springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.fhtw.swen3.services.mapper;\r\n\r\nimport at.fhtw.swen3.persistence.entities.ErrorEntity;\r\nimport javax.annotation.Generated;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n    date = \"2022-12-12T05:07:44+0100\",\r\n    comments = \"version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)\"\r\n)\r\npublic class ErrorMapperImpl implements ErrorMapper {\r\n\r\n    @Override\r\n    public ErrorEntity dtoToEntity(Error error) {\r\n        if ( error == null ) {\r\n            return null;\r\n        }\r\n\r\n        ErrorEntity errorEntity = new ErrorEntity();\r\n\r\n        return errorEntity;\r\n    }\r\n\r\n    @Override\r\n    public Error entityToDto(ErrorEntity errorEntity) {\r\n        if ( errorEntity == null ) {\r\n            return null;\r\n        }\r\n\r\n        Error error = new Error();\r\n\r\n        return error;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java
+--- a/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java	
++++ b/springboot/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java	
+@@ -5,8 +5,8 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-    date = "2022-12-12T05:07:44+0100",
+-    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.5 (Red Hat, Inc.)"
++    date = "2022-12-13T15:18:37+0100",
++    comments = "version: 1.5.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
+ )
+ public class ErrorMapperImpl implements ErrorMapper {
+ 
