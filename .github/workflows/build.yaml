@@ -69,7 +69,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       #Build the application using Maven
       - name: Build with Maven
-        run: mvn -B /home/runner/work/parcel-tracker-swkom/parcel-tracker-swkom/springboot/ -DskipTests --file pom.xml
+        run: mvn -f /home/runner/work/parcel-tracker-swkom/parcel-tracker-swkom/springboot/ -B package -DskipTests --file pom.xml
       #Build the application using Maven
       - name: Upload JAR
         #This uploads artifacts from your workflow allowing you to share data between jobs and store data once a workflow is complete.
