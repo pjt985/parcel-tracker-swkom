@@ -1,6 +1,6 @@
-package at.fhtw.swen3.gps.service;
+package at.fhtw.swen3.gps;
 
-import at.fhtw.swen3.gps.GeoEncodingService;
+import at.fhtw.swen3.gps.service.GeoEncodingService;
 import at.fhtw.swen3.services.dto.GeoCoordinate;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

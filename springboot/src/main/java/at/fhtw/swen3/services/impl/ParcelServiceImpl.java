@@ -1,6 +1,6 @@
 package at.fhtw.swen3.services.impl;
 
-import at.fhtw.swen3.gps.service.OpenStreetMapsProxy;
+import at.fhtw.swen3.gps.OpenStreetMapsProxy;
 import at.fhtw.swen3.persistence.entities.ParcelEntity;
 import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import at.fhtw.swen3.persistence.repositories.ParcelRepository;
@@ -19,7 +19,6 @@ import javax.transaction.Transactional;
 import javax.validation.ConstraintViolationException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 

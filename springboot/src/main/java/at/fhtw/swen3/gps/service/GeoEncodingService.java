@@ -1,4 +1,4 @@
-package at.fhtw.swen3.gps;
+package at.fhtw.swen3.gps.service;
 
 import at.fhtw.swen3.services.dto.GeoCoordinate;
 
